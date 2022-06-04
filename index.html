@@ -1,0 +1,84 @@
+<html lang=es>
+    <style>
+        .button {
+            background-color: #6DB1FF; 
+            color: #FFFF;
+            border: 2px solid #6DB1FF;
+            border-radius: 5px;
+            padding: 5px;
+            cursor: pointer
+        }
+    </style>
+    <head>
+        <title>EL MUNDO DE CARU</title>
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+    </head>
+    <h1 style= "text-align:center; font-family:arial">
+        EL MUNDO DE CARU</h1>
+    <body>
+        
+        <p style= "font-family:sans-serif"> ¡Hola a todos! Este es el mundo de Caru. Aquí simplemente estaré 
+            probando unas cosillas así que no esperes mucho de mi. <br>Esta es mi cara xdxd ok no <br> <br>
+            <img src="https://images-ext-2.discordapp.net/external/CPFDxhIY9vhu1EUdGmnTAEIg_Ol2kFEt5dAfEvgYVxs/%3Fsize%3D2048/https/cdn.discordapp.com/avatars/769257911163289642/1eb0e4c536a5b3e6c6cd37eb4fec772d.png" 
+            alt= "papucho troll.jpg"
+            style="width:100px; height:100px;">     
+        </p>
+        <hr>
+        <section>
+            Para entrar a este lugar necesitas una contraseña <br> <br>
+            <iframe src= "myworld-locked.html" title="LOCK-SCREEN" style="border:none"></iframe>
+        </section>
+        <br>
+        <button type="button" 
+        class = "button"
+        onclick = "Button()"
+        > Pulsa aquí para recibirla 
+        </button>
+        <br><br><br>
+       <p2>Escribe aquí la contraseña: 
+            <input id= "contraseña">
+            <button1 type="button" 
+            class = "button"
+            onclick = "Verificar()"
+            >Verificar</button1>
+        </p2>
+        <script>
+           
+            var Contra = Math.floor(Math.random()*999999)+100000;
+            let pinche = "Se te ha denegado el derecho a entrar"
+            function Button() {
+                var txt;
+                if(confirm("Comes pingas?")){
+                    txt = 'No vas a poder entrar no le sabes al chispop';
+                    fail = 1
+                }else{ 
+                    txt = 'La contraseña es ' + Contra;
+                    fail = 0
+                }alert(txt);
+                while(fail == 1){alert(pinche)}
+            }
+
+            function Verificar() {
+                let nepe = document.getElementById('contraseña').value;
+                var verify;
+                if(nepe == Contra){
+                    verify = "¡Lograste registrarte!";
+                    alert(verify);
+                    window.open(src="myworld.html", 'My World')
+                }else
+                /*if(nepe == ) {
+                    verify = "Bienvenido Admin";
+                    alert(verify)
+                    window.open(src="myworld.html", 'My World')
+                }else*/{
+                    verify = "No pendejo esa no es la contra";  
+                    alert(verify)
+                    window.close()
+                    window.open(href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ")
+                    while(1){alert(pinche)}
+                
+                }
+            }
+        </script>
+    </body>
+</html>
